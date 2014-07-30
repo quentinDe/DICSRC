@@ -1,0 +1,7 @@
+<project name="DICSRC" default="dist" basedir=".">
+    <description>
+        Genie Logiciel
+    </description>
+
+    <property name="src" location="Sources"/>
+    <property name="build" location="Buidl"/>
