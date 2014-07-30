@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="projet" default="build">
-	<target name="build" depends="prepare,lint"/>
-
+<target name="build" depends="prepare,lint,phpcs,phploc,phpdox,phpunit"/>
 	<target name="prepare" depends="clean">
                 <mkdir dir="${basedir}/build/api"/>
                 <mkdir dir="${basedir}/build/logs"/>
                 <mkdir dir="${basedir}/build/coverage"/>
                 <mkdir dir="${basedir}/build/pdepend"/>
 	</target>
-
 	<target name="clean">
 		<delete dir="${basedir}/build/api"/>
 		<delete dir="${basedir}/build/logs"/>
 		<delete dir="${basedir}/build/coverage"/>
 		<delete dir="${basedir}/build/pdepend"/>
 	</target>
-
 	<target name="lint">
 		<apply executable="php" failonerror="true">
 			<arg value="-l"/>
@@ -29,4 +26,33 @@
                         </fileset>
 		</apply>
 	</target>
+	<target name="phpcs">
+                 <exec executable="phpcs">
+                         <arg value="--standard=${basedir}/build/phpcs.xml" />
+                         <arg path="${basedir}/Sources" />
+                 </exec>
+	</target>
+	<target name="phploc">
+                <exec executable="phploc">
+                         <arg value="--count-tests" />
+                         <arg value="--log-csv" />
+                         <arg value="${basedir}/build/logs/phploc.csv" />
+                	 <arg path="${basedir}/Sources" />
+                </exec>
+	</target>
+	<target name="phpdox">
+		<exec executable="phpdox"/>
+	</target>
+	<target name="phpcpd">
+		 <exec executable="phpcpd">
+			 <arg value="--log-pmd" />
+			 <arg value="${basedir}/build/logs/pmd-cpd.xml" />
+			 <arg path="${basedir}/Sources" />
+		 </exec>
+	</target>
+	<target name="phpunit">
+		<exec executable="phpunit" failonerror="true">
+			<arg value="-c"/>
+			<arg value="${basedir}/build/phpunit>
+	</target> 
 </project>
