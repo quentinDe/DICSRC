@@ -51,8 +51,6 @@
 		 </exec>
 	</target>
 	<target name="phpunit">
-		<exec executable="phpunit" failonerror="true">
-			<arg value="-c"/>
-			<arg value="${basedir}/build/phpunit>
+		<exec executable="phpunit" failonerror="true"/>
 	</target> 
 </project>
