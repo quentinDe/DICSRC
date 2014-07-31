@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Projet" tests="4" assertions="4" failures="0" errors="0" time="0.087062">
-    <testsuite name="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.061075">
-      <testcase name="testFullName" class="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" line="15" assertions="1" time="0.061075"/>
+  <testsuite name="Projet" tests="4" assertions="4" failures="0" errors="0" time="0.098033">
+    <testsuite name="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.064843">
+      <testcase name="testFullName" class="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" line="15" assertions="1" time="0.064843"/>
     </testsuite>
-    <testsuite name="UserTest" file="/home/android/projet/tests/unit/userTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.025987">
-      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="10" assertions="1" time="0.009563"/>
-      <testcase name="testGetNom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="19" assertions="1" time="0.008055"/>
-      <testcase name="testGetAge" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="28" assertions="1" time="0.008369"/>
+    <testsuite name="UserTest" file="/home/android/projet/tests/unit/userTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.033190">
+      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="10" assertions="1" time="0.012392"/>
+      <testcase name="testGetNom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="19" assertions="1" time="0.009261"/>
+      <testcase name="testGetAge" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="28" assertions="1" time="0.011537"/>
     </testsuite>
   </testsuite>
 </testsuites>
