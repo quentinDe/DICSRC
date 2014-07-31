@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="1.5.3">
-<file name="/home/android/projet/Sources/config.php">
- <error line="10" column="3" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 2" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
- <error line="13" column="3" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 2" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
-</file>
 <file name="/home/android/projet/Sources/dao/daousersession.php">
  <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
  <error line="6" column="42" severity="error" message="Opening brace of a class must be on the line after the definition" source="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>

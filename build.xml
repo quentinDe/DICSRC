@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="projet" default="build">
 <target name="build" depends="prepare,lint,phpcs,phploc,phpdox,phpunit"/>
-	<target name="prepare" depends="clean">
-                <mkdir dir="${basedir}/build/api"/>
-                <mkdir dir="${basedir}/build/logs"/>
-                <mkdir dir="${basedir}/build/coverage"/>
-                <mkdir dir="${basedir}/build/pdepend"/>
-	</target>
 	<target name="clean">
-		<delete dir="${basedir}/build/api"/>
-		<delete dir="${basedir}/build/logs"/>
-		<delete dir="${basedir}/build/coverage"/>
-		<delete dir="${basedir}/build/pdepend"/>
+                <delete dir="${basedir}/build/api"/>
+                <delete dir="${basedir}/build/logs"/>
+                <delete dir="${basedir}/build/coverage"/>
+                <delete dir="${basedir}/build/pdepend"/>
+	</target>
+	<target name="prepare" depends="clean">
+		<mkdir dir="${basedir}/build/api"/>
+		<mkdir dir="${basedir}/build/logs"/>
+		<mkdir dir="${basedir}/build/coverage"/>
+		<mkdir dir="${basedir}/build/pdepend"/>
 	</target>
 	<target name="lint">
 		<apply executable="php" failonerror="true">
@@ -53,8 +53,6 @@
 		 </exec>
 	</target>
 	<target name="phpunit">
-		<exec executable="phpunit" failonerror="true">
-        	        <arg value="-c${basedir}/build/phpunit.xml.dist" />
-		</exec>
+		<exec executable="phpunit" failonerror="true"/>
 	</target> 
 </project>
