@@ -21,4 +21,13 @@ class UserTest extends PHPUnit_Framework_TestCase
             $user = new Entity\User('Chirac', 'Jacques', 81);
 	    $this->assertEquals('Chirac', $user->getNom());
 	}
+
+/*
+* @cover Entiry\User::GetAge()
+*/
+    public function testGetAge()
+        {
+            $user = new Entity\User('Chirac', 'Jacques', 81);
+	    $this->assertEquals(81, $user->getAge());
+	}
 }
