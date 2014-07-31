@@ -31,7 +31,7 @@
                         <arg value="--standard=PSR2" />
                         <arg path="${basedir}/Sources" />
 			<arg value="--ignore=${basedir}/Sources/web" />
-			<arg value="--report-checkstyle=${basedir}/build/logs/phpcs.xml" />
+			<arg value="--report-checkstyle=${basedir}/build/logs/phpcs.csv" />
                  </exec>
 	</target>
 	<target name="phploc">
