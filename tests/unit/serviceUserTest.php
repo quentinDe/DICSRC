@@ -4,11 +4,10 @@ class ServiceUser extends PHPUnit_Framework_TestCase
 {
     protected $mock;
     function __construct()
-	{
-            $this->mock = $this->GetMockBuilder('DAO\DAOUserSession')->getMock();
-	    $this->mock->method('get')->will($this->returnValue('John'));
-	
-        }
+    {
+        $this->mock = $this->GetMockBuilder('DAO\DAOUserSession')->getMock();
+        $this->mock->method('get')->will($this->returnValue('John'));
+    }
 
 /*
 * @cover Service\ServiceUser::fullName()
