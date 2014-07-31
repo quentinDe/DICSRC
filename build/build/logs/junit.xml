@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Projet" tests="4" assertions="4" failures="0" errors="0" time="0.013190">
+    <testsuite name="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.010888">
+      <testcase name="testFullName" class="ServiceUser" file="/home/android/projet/tests/unit/serviceUserTest.php" line="18" assertions="1" time="0.010888"/>
+    </testsuite>
+    <testsuite name="UserTest" file="/home/android/projet/tests/unit/userTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.002302">
+      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="10" assertions="1" time="0.001316"/>
+      <testcase name="testGetNom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="19" assertions="1" time="0.000493"/>
+      <testcase name="testGetAge" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="28" assertions="1" time="0.000493"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

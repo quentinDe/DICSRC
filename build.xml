@@ -28,8 +28,9 @@
 	</target>
 	<target name="phpcs">
                  <exec executable="phpcs">
-                         <arg value="--standard=${basedir}/build/phpcs.xml" />
-                         <arg path="${basedir}/Sources" />
+                        <arg value="--standard=PSR2" />
+                        <arg path="${basedir}/Sources" />
+			<arg value="--ignore=${basedir}/Sources/web" />
                  </exec>
 	</target>
 	<target name="phploc">
@@ -56,4 +57,3 @@
 		</exec>
 	</target> 
 </project>
-
