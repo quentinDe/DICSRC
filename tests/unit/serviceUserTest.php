@@ -1,20 +1,34 @@
 <?php
 
-class ServiceUser extends PHPUnit_Framework_TestCase
+class ServiceUserTest extends PHPUnit_Framework_TestCase
 {
-    protected $mock;
+
     function __construct()
     {
-        $this->mock = $this->GetMockBuilder('DAO\DAOUserSession')->getMock();
-        $this->mock->method('get')->will($this->returnValue('John'));
+	$user = $this->getMockBuilder("Entity\User")->disableOriginalConstructor()->getMock();
+        $user->method("getPrenom")->will($this->returnValue("Jacques"));
+	$user->method("getNom")->will($this->returnValue("Chirac"));
+	$user->method("getAge")->will($this->returnValue(81));
+
+	$this->dao = $this->getMockBuilder("DAO\DAOUserSession")->disableOriginalConstructor()->getMock();
+	$this->dao->method("get")->will($this->returnValue($user->getAge()));
+	$this->dao->method("getUser")->will($this->returnValue($user));	
+	$this->dao->method("register")->will($this->returnValue(true));	
+
     }
 
 /*
-* @cover Service\ServiceUser::fullName()
+*@cover Service\ServiceUser::fullName()
 */
     public function testFullName()
         {
-	    $Service = new Service\ServiceUser($this->mock);
-	    $this->assertEquals('John John', $Service->fullName());
+	    $service = new Service\ServiceUser($this->dao);
+	    $this->assertEquals("Jacques Chirac", $service->fullName());
+	}
+
+    public function testBirthYear()
+        {
+	    $service = new Service\ServiceUser($this->dao);
+	    $this->assertEquals(1933, $service->birthYear());
 	}
 }

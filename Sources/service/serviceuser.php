@@ -7,6 +7,7 @@ namespace Service;
   */
 class ServiceUser implements iServiceUser {
   private $userDAO;
+  private $user;
 
   public function __construct($userDAO) {
     $this->userDAO = $userDAO;
@@ -25,16 +26,21 @@ class ServiceUser implements iServiceUser {
     return $this;
   }
 
-  public function set($key, $value) {
+  public function set($key, $value) 
+  {
     $this->userDAO->set($key, $value);
     return $this;
   }
 
-  public function fullName() {
-    return $this->userDAO->get('prenom').' '.$this->userDAO->get('nom');
+  public function fullName() 
+  {
+    $user = $this->userDAO->getUser();
+    return $user->getPrenom() . ' ' . $user->getNom();
   }
 
-  public function birthyear() {
+
+  public function birthyear()
+  {
     return date("Y") - $this->getUser()->getAge();
   }
 }
