@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1406881757">
-  <project timestamp="1406881757">
+<coverage generated="1406881866">
+  <project timestamp="1406881866">
     <package name="DAO">
       <file name="/home/android/projet/Sources/dao/daousersession.php">
         <class name="DAOUserSession" namespace="DAO">
