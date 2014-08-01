@@ -31,4 +31,10 @@ class ServiceUserTest extends PHPUnit_Framework_TestCase
 	    $service = new Service\ServiceUser($this->dao);
 	    $this->assertEquals(1933, $service->birthYear());
 	}
+
+    public function testRegister()
+        {
+	    $service = new Service\ServiceUser($this->dao);
+	    $this->assertTrue($service->register("Sans nom", "Sans prenom", 0));
+	}
 }

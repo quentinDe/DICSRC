@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1406902820">
-  <project timestamp="1406902820">
+<coverage generated="1406903308">
+  <project timestamp="1406903308">
     <package name="DAO">
       <file name="/home/android/projet/Sources/dao/daousersession.php">
         <class name="DAOUserSession" namespace="DAO">
@@ -71,29 +71,23 @@
     <package name="Service">
       <file name="/home/android/projet/Sources/service/serviceuser.php">
         <class name="ServiceUser" namespace="Service">
-          <metrics methods="7" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="18" coveredelements="10"/>
+          <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
         </class>
-        <line num="12" type="method" name="__construct" crap="1" count="2"/>
-        <line num="13" type="stmt" count="2"/>
-        <line num="14" type="stmt" count="2"/>
-        <line num="16" type="method" name="get" crap="2" count="0"/>
-        <line num="17" type="stmt" count="0"/>
-        <line num="20" type="method" name="getUser" crap="1" count="1"/>
-        <line num="21" type="stmt" count="1"/>
-        <line num="24" type="method" name="register" crap="2" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="29" type="method" name="set" crap="2" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="35" type="method" name="fullName" crap="1" count="1"/>
-        <line num="37" type="stmt" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="42" type="method" name="birthyear" crap="1" count="1"/>
-        <line num="44" type="stmt" count="1"/>
-        <metrics loc="46" ncloc="42" classes="1" methods="7" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="18" coveredelements="10"/>
+        <line num="12" type="method" name="__construct" crap="1" count="3"/>
+        <line num="13" type="stmt" count="3"/>
+        <line num="14" type="stmt" count="3"/>
+        <line num="17" type="method" name="getUser" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="21" type="method" name="register" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="25" type="method" name="fullName" crap="1" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="32" type="method" name="birthyear" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="36" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
       </file>
     </package>
-    <metrics files="3" loc="161" ncloc="126" classes="3" methods="20" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="13" elements="69" coveredelements="21"/>
+    <metrics files="3" loc="151" ncloc="116" classes="3" methods="18" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="14" elements="63" coveredelements="23"/>
   </project>
 </coverage>

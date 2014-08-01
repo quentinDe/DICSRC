@@ -13,23 +13,13 @@ class ServiceUser implements iServiceUser {
     $this->userDAO = $userDAO;
   }
 
-  public function get($key) {
-    return $this->userDAO->get($key);
-  }
 
   public function getUser() {
     return $this->userDAO->getUser();
   }
 
   public function register($nom, $prenom, $age) {
-    $this->userDAO->register($nom, $prenom, $age);
-    return $this;
-  }
-
-  public function set($key, $value) 
-  {
-    $this->userDAO->set($key, $value);
-    return $this;
+    return $this->userDAO->register($nom, $prenom, $age);
   }
 
   public function fullName() 

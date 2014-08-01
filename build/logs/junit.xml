@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Projet" tests="5" assertions="5" failures="0" errors="0" time="0.122655">
-    <testsuite name="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.101907">
-      <testcase name="testFullName" class="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" line="23" assertions="1" time="0.057974"/>
-      <testcase name="testBirthYear" class="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" line="29" assertions="1" time="0.043933"/>
+  <testsuite name="Projet" tests="6" assertions="6" failures="0" errors="0" time="0.156657">
+    <testsuite name="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.134044">
+      <testcase name="testFullName" class="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" line="23" assertions="1" time="0.060273"/>
+      <testcase name="testBirthYear" class="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" line="29" assertions="1" time="0.050948"/>
+      <testcase name="testRegister" class="ServiceUserTest" file="/home/android/projet/tests/unit/serviceUserTest.php" line="35" assertions="1" time="0.022823"/>
     </testsuite>
-    <testsuite name="UserTest" file="/home/android/projet/tests/unit/userTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.020748">
-      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="10" assertions="1" time="0.006533"/>
-      <testcase name="testGetNom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="19" assertions="1" time="0.006385"/>
-      <testcase name="testGetAge" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="28" assertions="1" time="0.007830"/>
+    <testsuite name="UserTest" file="/home/android/projet/tests/unit/userTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.022613">
+      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="10" assertions="1" time="0.007700"/>
+      <testcase name="testGetNom" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="19" assertions="1" time="0.007089"/>
+      <testcase name="testGetAge" class="UserTest" file="/home/android/projet/tests/unit/userTest.php" line="28" assertions="1" time="0.007824"/>
     </testsuite>
   </testsuite>
 </testsuites>
